@@ -1,4 +1,4 @@
-연습문제 1: 기본 파일 시스템 탐색
+## 연습문제 1: 기본 파일 시스템 탐색
 1-1. 현재 위치 확인 및 이동
 현재 작업 디렉터pw리의 절대 경로를 출력하시오.
 홈 디렉터리로 이동하시오.
@@ -94,7 +94,7 @@ DIR_COLORS.lightbgcolor  kernel         os-release                shadow-       
 dnf                      keys           ostree                    shells
 ```
 
-연습문제 2: 디렉터리 및 파일 생성
+## 연습문제 2: 디렉터리 및 파일 생성
 2-1. 디렉터리 구조 생성
 다음과 같은 디렉터리 구조를 생성하시오:
 practice/
@@ -200,7 +200,7 @@ readme.txt
 ```
 
 
-연습문제 4: 파일 이동 및 이름 변경
+## 연습문제 4: 파일 이동 및 이름 변경
 4-1. 파일 이동
 memo.txt 파일을 documents/ 디렉터리로 이동하시오.
 images/ 디렉터리를 practice/media/로 이름을 변경하시오.
@@ -230,7 +230,7 @@ introduction.txt  notes  reports  study_notes.txt
 ```
 
 
-연습문제 5: 종합 실습
+## 연습문제 5: 종합 실습
 5-1. 프로젝트 디렉터리 생성
 다음 요구사항에 따라 프로젝트 디렉터리를 생성하시오:
 my_project/라는 최상위 디렉터리 생성
