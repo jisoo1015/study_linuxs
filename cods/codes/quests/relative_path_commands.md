@@ -198,28 +198,39 @@ docs/user/ 디렉토리의 모든 파일을 tests/unit/ 디렉토리로 이동�
 [kimjisoo@localhost project]$ cp .docs/user/{api_copy.md,manual.txt} ./tests/units/
 ```
 config/ 디렉토리 전체를 backup_config/로 복사하시오.
+```
+[kimjisoo@localhost project]$ cp -r ./config/ ./backup_config/
+```
+
+
 
 연습문제 6: 에러 찾기 및 수정
 6-1. 잘못된 상대 주소 찾기
 현재 위치가 ~/practice/project/docs/user/일 때, 다음 명령어들 중 에러가 있는 것을 찾고 올바른 명령어로 수정하시오:
 # A
 ls ../../../project/src/main/
-
+에러없음
 
 # B
 cat ../../src/utils/helper.py
-
+에러없음
 
 # C
 cd ../dev/../../config/
-
+에러없음
 
 # D
 cp manual.txt ../../tests/unit/backup.txt
+```
+cp: cannot stat 'manual.txt': No such file or directory
+```
 
 
 # E
 mv api_copy.md ../../../src/main/
+```
+mv: cannot stat 'api_copy.md': No such file or directory
+```
 
 6-2. 경로 최적화
 다음 상대 주소를 더 간단하게 최적화하시오:
