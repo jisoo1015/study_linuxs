@@ -263,4 +263,21 @@ config/ 디렉터리에 settings.conf 파일 생성 (내용: "# Configuration Fi
 전체 my_project/ 디렉터리를 my_project_backup/으로 복사하시오.
 my_project/src/main.py 파일을 my_project/src/app.py로 이름을 변경하시오.
 my_project/docs/README.md 파일을 my_project/ 디렉터리로 이동하시오.
+```
 
+[kimjisoo@localhost my_project]$ cd ..
+[kimjisoo@localhost ~]$ cp my_project /home/kimjisoo/my_project/backup
+cp: -r not specified; omitting directory 'my_project'
+[kimjisoo@localhost ~]$ cp -r  my_project /home/kimjisoo/my_project/backup
+cp: cannot copy a directory, 'my_project', into itself, '/home/kimjisoo/my_project/backup/my_project'
+[kimjisoo@localhost ~]$ cd ~
+[kimjisoo@localhost ~]$ cd /home/kimjisoo/
+[kimjisoo@localhost ~]$ mkdir my_project_backup/
+[kimjisoo@localhost ~]$ cp -r /home/kimjisoo/my_project/* /home/kimjisoo/my_project_backup
+[kimjisoo@localhost ~]$ cd my_project
+[kimjisoo@localhost my_project]$ cd src
+[kimjisoo@localhost src]$ mv main.py app.py
+[kimjisoo@localhost src]$ cd ..
+[kimjisoo@localhost my_project]$ cd docs
+[kimjisoo@localhost docs]$ mv README.md /home/kimjisoo/my_project
+```
