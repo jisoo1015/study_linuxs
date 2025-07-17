@@ -6,3 +6,4 @@
 
 ## Quests
 기본 명령어 연습: [연습문제](/cods/codes/quests/basic_more_linux_commands.md)
+와일드카드 연습: [연습문제](/codes/quests/40_linux_wildcard_practice.md)
