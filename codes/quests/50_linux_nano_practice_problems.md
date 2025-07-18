@@ -14,7 +14,7 @@ Linux 명령어 실습 문제
 nano 편집기, 실행 쉘 작성, && 연산자 활용
 실습 환경 설정
 먼저 다음 명령어를 실행하여 실습 환경을 만들어보세요:
-```
+```shell
 mkdir shell_practice
 cd shell_practice
 touch data.txt config.conf notes.md
@@ -27,13 +27,13 @@ nano 편집기를 사용하여 server.conf 파일을 생성하고 다음 내용�
 PORT=8080
 HOST=localhost
 DEBUG=true
-```
+```shell
 명령어를 작성하세요
 [kimjisoo@localhost shell_practice]$ nano server.conf
 ```
 ### 1-2. 기존 파일 수정
 nano 편집기로 data.txt 파일을 열어서 "Hello Linux World!" 텍스트를 추가하세요.
-```
+```shell
 명령어를 작성하세요
 [kimjisoo@localhost shell_practice]$ nano data.txt
 ```
@@ -45,7 +45,7 @@ backup.sh 파일을 생성하여 다음 기능을 수행하는 스크립트를 �
 data.txt 파일을 backup 디렉토리에 복사
 복사 완료 메시지 출력 (ls-l)
 스크립트 파일 생성 및 실행 권한 부여 명령어를 작성하세요
-```
+```shell
 backup.sh에 작성한 내용:
 date
 cp data.txt ./backup/
@@ -66,17 +66,17 @@ total 4
 ### 2-2. 시스템 정보 출력 스크립트
 sysinfo.sh 스크립트를 생성하여 현재 사용자명(whoami), 현재 디렉토리(pwd), 디스크 사용량(df -을 출력하는 스크립트를 작성하고 실행하세요.
 명령어를 작성하세요
-```
+```shell
 [kimjisoo@localhost shell_practice]$ nano sysinfo.sh
 
 ```
-nano에 작성한 스크립트
-```
+nano sysinfo.sh 파일안에 작성한 스크립트:
+```shell
 hoami
 pwd
 df -h
 ```
-```
+```shell
 [kimjisoo@localhost shell_practice]$ ./sysinfo.sh (파일 실행)
 bash: ./sysinfo.sh: Permission denied (권한 없음)
 [kimjisoo@localhost shell_practice]$ chmod 777 ./sysinfo.sh  (권한부여)
@@ -97,16 +97,16 @@ tmpfs                174M  112K  174M   1% /run/user/1000
 projects 디렉토리를 생성하고, 성공하면 그 안에 readme.txt 파일을 생성하는 한 줄 명령어를 작성하세요.
 명령어를 작성하세요
 ```shell
-&& 엠퍼서트 사용
+### && 엠퍼서트 사용한거
 [kimjisoo@localhost shell_practice]$ mkdir projects && touch ./projects/readme.txt
 ```
-```
+```shell 
 [kimjisoo@localhost shell_practice]$ mkdir -p projects/readme.txt
 ```
 ### 3-2. 파일 존재 확인과 내용 출력
 server.conf 파일이 존재하는지 확인하고, 존재하면 파일 내용을 출력하는 한 줄 명령어를 작성하세요.
 명령어를 작성하세요
-```
+```shell
 [kimjisoo@localhost shell_practice]$ ls server.conf && cat server.conf 
 server.conf
 PORT=8080
@@ -119,7 +119,7 @@ logs 디렉토리로 이동
 access.log 파일 생성
 현재 디렉토리 내용 출력
 상위 디렉토리로 복귀
-```
+```shell
 [kimjisoo@localhost quests]$ cd ./shell_practice/logs && touch ./access.log && ls ./ && cd ../
 access.log
 ```
