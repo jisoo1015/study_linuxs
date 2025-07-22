@@ -93,7 +93,29 @@ Welcome, kimjisoo
 
 sudo 권한 필요
 
+```shell
+[kimjisoo@localhost ~]$ sudo nano /etc/login_notice.txt
+[sudo] password for kimjisoo: 
+[kimjisoo@localhost ~]$ cat /etc/login_notice.txt
+공지사항입니다 !!
+```
+```
+[kimjisoo@localhost ~]$ nano /etc/profile
+[kimjisoo@localhost ~]$ sudo nano /etc/profile
+```
+```shell
 
+(로그인 시 모든 사용자에게 공지 메시지 /etc/login_notice.txt를 출력하도록 설정)
+#nano: 
+cat /etc/login_notice.txt
+
+[sudo] password for kimjisoo: 
+[kimjisoo@localhost ~]$ su - kimjisoo
+Password: 
+Welcome, kimjisoo
+공지사항입니다 !!
+Welcome, kimjisoo
+```
 
 
 
