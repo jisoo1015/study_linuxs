@@ -399,8 +399,15 @@ Lisa:28:Seoul:Analyst
 ```
 
 11-4. 모든 .txt 파일에서 가장 많이 사용된 단어 상위 5개를 찾으세요.
+```shell
 # 명령어를 작성하세요
-
+[kimjisoo@localhost quests]$ cat *.txt | tr -cs 'a-zA-Z' '\n' | tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | head -5
+      6 seoul
+      6 apple
+      5 banana
+      4 cherry
+      3 linux
+```
 
 # 문제 12: 실무 시나리오 (최고급)
 다음 실무 상황을 가정하고 명령어를 작성하세요:
