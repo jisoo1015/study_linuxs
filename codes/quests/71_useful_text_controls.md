@@ -355,7 +355,7 @@ Lisa:28:Seoul:Analyst
 ```
 
 # 문제 11: 종합 문제 (고급)
-11-1. employees.txt 파일에서 각 도시별 직원 수를 계산하여 많은 순서대로 출력하세요.
+### 11-1. employees.txt 파일에서 각 도시별 직원 수를 계산하여 많은 순서대로 출력하세요.
 ```shell 
 # 명령어를 작성하세요
 [kimjisoo@localhost quests]$ cat employees.txt 
@@ -377,7 +377,7 @@ Lisa:28:Seoul:Analyst
 #sort -nr	숫자 기준으로 내림차순 정렬 (많은 도시부터)
 ```
 
-11-2. system.log 파일에서 시간대별(시간 단위) 로그 개수를 계산하세요.
+### 11-2. system.log 파일에서 시간대별(시간 단위) 로그 개수를 계산하세요.
 ```shell
 # 명령어를 작성하세요
 [kimjisoo@localhost quests]$ cat system.log 
@@ -398,7 +398,7 @@ Lisa:28:Seoul:Analyst
       1 55 WARNING Disk space low
 ```
 
-11-4. 모든 .txt 파일에서 가장 많이 사용된 단어 상위 5개를 찾으세요.
+### 11-4. 모든 .txt 파일에서 가장 많이 사용된 단어 상위 5개를 찾으세요.
 ```shell
 # 명령어를 작성하세요
 [kimjisoo@localhost quests]$ cat *.txt | tr -cs 'a-zA-Z' '\n' | tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | head -5
