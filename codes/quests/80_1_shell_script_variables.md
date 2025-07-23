@@ -67,7 +67,7 @@ CONTENT="$2"
 # 인자 개수 확인
 if [ "$#" -ne 2 ]; then
         echo "오류: 인자는 2개가 필요합니다."
-        exit 1
+        return 1
 fi
 
 #변수에 인자 할당
@@ -80,6 +80,9 @@ echo "'$FILENAME' 파일이 성공적으로 생성되었습니다."
 #결과 확인
 [kimjisoo@localhost quests]$ source 80_1_shell_variables_aguments.sh welcome.txt "Hello Linux Learners!"
 'welcome.txt' 파일이 성공적으로 생성되었습니다.
+
+[kimjisoo@localhost quests]$ source 80_1_shell_variables_aguments.sh welcome.txt
+오류: 인자는 2개가 필요합니다.
 ```
 
 
